@@ -1,0 +1,201 @@
+@charset "utf-8";
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700;1,900&display=swap');
+
+:root {
+    --cor0:#0000008c;
+    --fonte-clinica:'Source Sans Pro', sans-serif;
+}
+
+*{margin: 0; padding: 0; box-sizing:border-box;}
+
+body{
+    font-family:var(--fonte-clinica);
+    color: var(--cor0);
+}
+
+/* ==== Cabeçaho do site ==== */
+header {
+    width: 100%;
+    height: 90px;
+    background-color: #00d8d8;
+    display: flex;
+}
+
+.topo {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.topo > figure > a > img {
+    width: 150px;
+}
+
+nav.links-topo {
+    width: 50%;
+    margin-left:15px;
+    padding: 10px;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+nav.links-topo > a {
+    color:#fff;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+nav.links-topo > a:hover {
+    color: #000;
+    transition: 0.51s;
+}
+
+/* === CONFIGURAÇÕES GLOBAIS === */
+.largura-total {
+    width: 1024px;
+    margin: 0 auto;
+}
+
+main {
+    background-color:#fff;
+}
+
+/* =============================== */
+
+/* ==== 2 CAPA ===== */
+
+.fundo {
+    display: flex;
+    width: 100%;
+    height: 610px;
+    background-image: url('../assets/recepcao2.jpg');
+    background-position: center top;
+    background-size: cover;
+    position: relative;
+}
+
+.fundo::before {
+    content: "";
+    background-color:black;
+    opacity: 0.3;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+.fundo > div {
+    display: flex;
+    align-items: center;
+    color: #fff;
+    font-size: 1.5em;
+    font-weight: normal;
+    z-index: 1;
+}
+
+/* === Conteudo === */
+#sobre {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.secao {
+    width: 100%;
+    margin: 20px;
+    
+}
+h2 {
+    margin-bottom: 25px;
+}
+p {
+    padding: 0 150px;
+    margin-bottom: 20px;''
+}
+.sobre, .espec, .contatos {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    text-align: center;
+    width: 100%;
+}
+
+.clinica {
+    width: 1024px;
+    display:flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding:20px 0;
+}
+
+.nossa-clinica {
+    width:512px;
+    display: flex;
+    flex-direction: column;
+    padding-top: 30px;
+    margin-left:50px;
+}
+
+.nossa-clinica > h3 {
+    text-align: left;
+    margin-bottom: 20px;
+    font-size: 1.1em;
+    font-weight: normal;
+}
+.nossa-clinica > ul{
+    margin-left: 30px;
+}
+
+/* === 3 especialidade === */
+
+#espec {
+    display:flex;
+    flex-direction: column;  
+}
+.espec {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.especialidade {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.picture {
+    width: calc(100% / 3 - 40px);
+    margin:0 20px;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 1px 1px 5px 1px rgba(0, 0, 0, 0.42);
+}
+.foto {
+    box-sizing: border-box;
+    object-fit: 1;
+}
+
+.picture > a {
+    display: flex;
+    justify-content: center;
+    text-decoration: none;
+    color: var(--cor0);
+    padding: 10px 0;
+}
+
+.bot {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100px;
+}
+.bot > a {
+    text-decoration: none;
+    font-weight: bold;
+    color: #fff;
+    background-color: #00d8d8;
+    padding: 10px;
+}
