@@ -1,0 +1,162 @@
+@media all and (max-width:502px){
+     *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+    body {
+        overflow-x: hidden;
+    }
+    
+     main > .largura-total {
+        width: calc(1024px / 3);
+             }
+    
+    .topo {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .topo > a > img {
+        display: flex;
+        width: 100px;
+        padding: 0;
+        margin: 0;
+    }
+    .links-topo > a {
+        padding: 0 30px;
+        border-top:1px solid #0000008c;
+    }
+
+    main > .fundo {
+        height: 200px;
+        background-position: center top;
+    }
+    
+    h1 {
+        font-size: 0.8em;
+    }
+    section > div > .secao {
+        margin: 5px 0;
+    }
+    section > div > p {
+        padding: 0;
+    }
+    .clinica > figure > img {
+        display: none;
+    }
+
+    .nossa-clinica {
+        padding-left: 15px;
+        
+    }
+    .especialidade > .picture {
+    width: calc(100%);
+    margin: 15px auto;
+}
+}
+
+@media all and (min-width:505px) and (max-width:768px){
+     *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+    body {
+        overflow-x: hidden;
+    }
+    
+     main > .largura-total {
+        width: calc(1024px / 2);
+    }
+
+    .topo {
+        display: flex;
+        justify-content: center;
+        width: 100px;
+        padding: 10px 20px;
+        margin: 0;
+    }
+    
+  
+    main > .fundo {
+        height: 400px;
+        background-position: center top;
+    }
+    
+    h1 {
+        font-size: 1.2em;
+    }
+    
+    section > div > p {
+        padding: 0;
+    }
+    
+    .clinica > figure > img {
+        display: none;
+    }
+
+    .especialidade > .picture {
+    width: calc(100% / 2 - 10px);
+    margin: 10px 5px;
+}
+}
+
+@media all and (min-width:769) {
+     *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+    body {
+        overflow-x: hidden;
+    }
+    
+     main > .largura-total {
+        width: calc(1024px - 50px);
+        margin: 0 25px;
+    }
+
+    .topo {
+        display: flex;
+        justify-content: center;
+        width: 100px;
+        padding: 10px 20px;
+        margin: 0;
+    }
+    
+  
+    main > .fundo {
+        height: 400px;
+        background-position: center top;
+    }
+
+    .clinica > figure > img {
+        visibility:visible ;
+    }
+    
+    h1 {
+        font-size: 1.2em;
+    }
+    
+    section > div > p {
+        padding: 0;
+    }
+    
+    section > article > .clinica > figure > img {
+        display: contents;
+    }
+
+    .especialidade > .picture {
+    width: calc(100% / 3 - 50px);
+    margin: 10px 25px;
+}
+
+    .sobre > p, .espec > p, .contatos > p {
+        width: 790px;
+        margin: 0 auto;
+    }
+}

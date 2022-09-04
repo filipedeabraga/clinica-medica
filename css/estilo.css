@@ -1,6 +1,8 @@
 @charset "utf-8";
 @import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700;1,900&display=swap');
 
+@import url('mediaquerie.css');
+
 :root {
     --cor0:#0000008c;
     --fonte-clinica:'Source Sans Pro', sans-serif;
@@ -11,6 +13,7 @@
 body{
     font-family:var(--fonte-clinica);
     color: var(--cor0);
+
 }
 
 /* ==== Cabeçaho do site ==== */
@@ -18,7 +21,9 @@ header {
     width: 100%;
     height: 90px;
     background-color: #00d8d8;
+    z-index: 2;
     display: flex;
+    top: 0;
 }
 
 .topo {
@@ -100,11 +105,19 @@ main {
     align-items: center;
 }
 
+#sobre, #espec, #contato {
+    margin: 50px auto;
+}
+
 .secao {
     width: 100%;
     margin: 20px;
     
 }
+h1 {
+    font-weight: 400;
+}
+
 h2 {
     margin-bottom: 25px;
 }
@@ -199,3 +212,33 @@ p {
     background-color: #00d8d8;
     padding: 10px;
 }
+
+/*  Contatos */
+
+#contato {
+    display: flex;
+    flex-direction:column;
+}
+.contatos {
+    display: flex;
+    flex-direction: column;
+}
+
+iframe {
+    width: 100%;
+}
+
+/*  === rodapé === */
+
+footer {
+    width: 100%;
+}
+
+.rodape {
+    background-color: #008a8a;
+    color: #fff;
+    display: flex;
+    flex-direction:column;
+    align-items: center;
+}
+
