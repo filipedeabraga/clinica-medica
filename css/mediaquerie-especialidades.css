@@ -1,5 +1,22 @@
-@media (max-width:450){
-  main > section#ortopedia > div.largura-total1 > p {
-    padding:0px 20px;
+@media (max-width:768px){
+  .box > img {
+    display: none;
+  }
+    .conteudo1, .conteudo {
+        margin: 20px auto 50px auto;
+      }
+    .conteudo2 {
+      margin-bottom: 0;
+    }  
+
+    .orto > td {
+      padding: 5px;
     }
-}
+    .ger-fis > td {
+      padding: 5px;
+    }
+    
+    p {
+      padding: 0px 50px;
+    }
+  }

@@ -38,7 +38,7 @@ div, section, table {
     border-width: 3px;
 }
 
-.topo-menu>a:hover {
+.topo-menu > a:hover {
     color: rgb(0, 135, 135);
 }
 
@@ -70,7 +70,7 @@ p {
     text-align: center;
 }
 
-section>div>img {
+section > div > img {
     width: 100%;
 }
 
@@ -115,21 +115,4 @@ th {
     width: 35%;
 }
 
-@media all and (min-width:320px) and (max-width:768px){
-    .box > img {
-        display: none;
-    }
-    .conteudo {
-        margin: 20px auto;
-    }
-    
-    .orto > td {
-    padding: 5px;
-    }
-    .ger-fis > td {
-    padding: 5px;
-    }
-    footer{
-        margin: 150px auto 0 auto;
-    }
-}
+
