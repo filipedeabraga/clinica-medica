@@ -12,177 +12,62 @@
     }
 
     .nossa-clinica {
-        
+       flex-direction: row;
+       flex-wrap: wrap;
+       justify-content: center;
     }
 
     .clinica > figure {
         display: none;
     }
 
-    .secao > p {
+    .secao > p, .rodape > p {
     padding:0px 20px;
+    }
+
+    .especialidade {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+    .picture {
+        width: 84%;
+        margin: 50px;
     }
 }
 
-@media (max-width:320px){
+@media (max-width:450px){
+    header {
+        height: 100px;
+    }
+    .topo {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .topo > a > img {
+        width: 100px;
+    }
+    nav.links-topo {
+        justify-content: center;
+        align-items: center;
+        border-top: 1px solid black;
+    }
+
+
     section.fundo {
-        height: 150px;
+        height: 200px;
     }
     .capa > h1 {
         font-size: 0.8em;
     }
-    .secao > p {
+    .secao > p, .rodape > p {
     padding:0px 20px;
     }
 
-  /*   .topo {
-        flex-direction: column;
-        align-items: flex-start;
-
-    .links-topo > a {
-        padding: 0 30px;
-        border-top:1px solid #0000008c;
-    }
-
-    main > .fundo {
-        height: 200px;
-        background-position: center top;
-    }
-    
-    h1 {
-        font-size: 0.8em;
-    }
-    section {
-        margin: 5px auto;
-        padding: 5px 10px;
-    }
-
-    section > div > .secao {
-        margin: 5px 0;
-    }
-    section > div > p {
-        padding: 0;
-    }
-    .clinica > figure > img {
-        display: none;
-    }
-
     .nossa-clinica {
-        padding-left: 15px;
-        
+       flex-direction: row;
+       flex-wrap: wrap;
+       justify-content: center;
     }
-    .especialidade > .picture {
-    width: calc(100%);
-    margin: 15px auto;
 }
-    
-    .rodape > p {
-        padding: 5px 50px;
-    } */
-
-}
-/* 
-@media all and (min-width:505px) and (max-width:768px){
-     *{
-        margin: 0;
-        padding: 0;
-        box-sizing: border-box;
-    }
-
-    body {
-        overflow-x: hidden;
-    }
-    
-     main > .largura-total {
-        width: calc(1024px / 2);
-    }
-
-    .topo {
-        display: flex;
-        justify-content: center;
-        width: 100px;
-        padding: 10px 20px;
-        margin: 0;
-    }
-    
-  
-    main > .fundo {
-        height: 400px;
-        background-position: center top;
-    }
-    
-    h1 {
-        font-size: 1.2em;
-    }
-    
-    section > div > p {
-        padding: 0;
-    }
-    
-    .clinica > figure > img {
-        display: none;
-    }
-
-    .especialidade > .picture {
-    width: calc(100% / 2 - 10px);
-    margin: 10px 5px;
-}
-}
-
-@media all and (min-width:769) and (min-width:1024px) {
-     *{
-        margin: 0;
-        padding: 0;
-        box-sizing: border-box;
-    }
-
-    body {
-        overflow-x: hidden;
-    }
-    
-     main > .largura-total {
-        width: calc(1024px);
-
-    }
-
-    .topo {
-        display: flex;
-        justify-content: center;
-        width: 100px;
-        padding: 10px 20px;
-        margin: 0;
-    }
-    
-  
-    main > .fundo {
-        height: 400px;
-        background-position: center top;
-    }
-   
-    h1 {
-        font-size: 1.2em;
-    }
-    
-    section > div > p {
-        padding: 0;
-    }
-    
-    section > article > .clinica > figure > img {
-        display: contents;
-    }
-
-    .especialidade > .picture {
-        width: calc(100% / 2 - 10px);
-        margin: 10px 5px;
-}
-
-    .especialidade > .picture {
-    width: calc(100% / 3 - 50px);
-    margin: 10px 25px;
-}
-
-    .sobre > p, .espec > p, .contatos > p {
-        width: 790px;
-        margin: 0 auto;
-    }
-} */
