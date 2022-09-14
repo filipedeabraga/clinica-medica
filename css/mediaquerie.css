@@ -1,29 +1,41 @@
-@media all and (min-width:320px) and (max-width:502px){
-     *{
-        margin: 0;
-        padding: 0;
-        box-sizing: border-box;
+@media (max-width:768px){
+ 
+    header{
+        width: 100%;
+    }
+    section.fundo {
+        height: 400px;
     }
 
-    body {
-        overflow-x: hidden;
+    .capa > h1 {
+        font-size: 1em;
     }
-    
-     main > .largura-total {
-        width: calc(1024px / 3);
-             }
-    
-    .topo {
-        display: flex;
+
+    .nossa-clinica {
+        
+    }
+
+    .clinica > figure {
+        display: none;
+    }
+
+    .secao > p {
+    padding:0px 20px;
+    }
+}
+
+@media (max-width:450px){
+    section.fundo {
+        height: 200px;
+    }
+    .capa > h1 {
+        font-size: 0.8em;
+    }
+
+  /*   .topo {
         flex-direction: column;
         align-items: flex-start;
-    }
-    .topo > a > img {
-        display: flex;
-        width: 100px;
-        padding: 0;
-        margin: 0;
-    }
+
     .links-topo > a {
         padding: 0 30px;
         border-top:1px solid #0000008c;
@@ -63,10 +75,10 @@
     
     .rodape > p {
         padding: 5px 50px;
-    }
+    } */
 
 }
-
+/* 
 @media all and (min-width:505px) and (max-width:768px){
      *{
         margin: 0;
@@ -170,4 +182,4 @@
         width: 790px;
         margin: 0 auto;
     }
-}
+} */
