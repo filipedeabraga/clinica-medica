@@ -27,15 +27,15 @@ div, section, table {
     justify-content: center;
 }
 
-.topo-menu>a {
+.topo-menu > a {
     text-decoration: none;
     padding: 0px;
-    margin: 0 10px;
+    margin: 0 5px;
     font-size: 0.9em;
     font-weight: 600;
     color: var(--cor0);
     border-bottom: 1px solid rgb(0, 229, 229);
-    border-width: 3px;
+    border-width: 2px;
 }
 
 .topo-menu > a:hover {
